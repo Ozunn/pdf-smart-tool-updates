@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "latestVersion": "1.0.0",
+  "latestVersion": "1.0.1",
   "minSupportedVersion": "1.0.0",
-  "releasedAt": "2026-05-12T18:00:00Z",
+  "releasedAt": "2026-05-12T18:30:00Z",
   "profileCollectionPolicyVersion": 1,
   "channels": {
     "stable": {
@@ -15,9 +15,9 @@
       },
       "newsThisVersion": {
         "highlights": [
-          "Prima release pubblica di PDF Smart Tool",
-          "Nuovo pulsante 'Verifica aggiornamenti' nel menu laterale",
-          "Download in-app automatico delle nuove versioni con barra di progresso"
+          "Collaudo F4 - test di rollout fittizio v1.0.1",
+          "Questo manifest sara' ripristinato a 1.0.0 entro pochi minuti",
+          "Se vedi questa modale durante un uso reale, ignora e ricontrolla piu' tardi"
         ],
         "knownIssues": []
       }
