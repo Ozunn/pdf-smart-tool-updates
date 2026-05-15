@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+    body{margin:0;font-family:Arial,sans-serif;background:#fff;color:#1e3663;
+      display:grid;min-height:100dvh;place-items:center;padding:16px;box-sizing:border-box}
+    main{max-width:min(92vw,520px);text-align:center;line-height:1.5}
+    h1{font-size:22px;margin:0 0 12px}
+    p{margin:0;color:#333}
+  </style>
+</head>
+<body>
+  <main>
+    <h1 id="title">Verifica email</h1>
+    <p id="message"></p>
+  </main>
+  <script>
+    const messages = {
+      token_already_used: "Questo link e' gia' stato usato. Puoi tornare a PDF Smart Tool.",
+      token_expired: "Il link di verifica e' scaduto. Apri PDF Smart Tool e richiedi una nuova verifica.",
+      invalid_token: "Il link di verifica non e' valido. Controlla di aver aperto l'email piu' recente.",
+      temporary_storage_error: "Non siamo riusciti a completare la verifica. Riprova tra qualche minuto.",
+    };
+    const code = new URLSearchParams(location.search).get("code") || "";
+    const title = document.getElementById("title");
+    const message = document.getElementById("message");
+    if (code === "token_already_used") title.textContent = "Email gia' confermata";
+    else if (code === "token_expired") title.textContent = "Link scaduto";
+    else if (code === "invalid_token") title.textContent = "Link non valido";
+    else if (code) title.textContent = "Verifica non disponibile";
+    message.textContent = messages[code] || messages.temporary_storage_error;
+  </script>
+</body>
+</html>
