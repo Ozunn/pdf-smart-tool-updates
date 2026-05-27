@@ -9,8 +9,8 @@
       "binary": {
         "windowsX64": {
           "url": "https://github.com/Ozunn/pdf-smart-tool-updates/releases/download/v1.0.0/PDF_Smart_Tool_v1.0.0.exe",
-          "sha256": "d44dd2084edf43abe310352e12ad857eb29746a601fae9b570830ada56c54ef9",
-          "sizeBytes": 526574658
+          "sha256": "60cd70c8c99648441b4390a51f3187935081152c2783a360592eb70ed3bbb2fa",
+          "sizeBytes": 526531188
         }
       },
       "newsThisVersion": {
