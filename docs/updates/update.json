@@ -2,22 +2,22 @@
   "schemaVersion": 1,
   "latestVersion": "1.0.0",
   "minSupportedVersion": "1.0.0",
-  "releasedAt": "2026-05-27T16:30:00Z",
+  "releasedAt": "2026-05-27T17:10:00Z",
   "profileCollectionPolicyVersion": 1,
   "channels": {
     "stable": {
       "binary": {
         "windowsX64": {
           "url": "https://github.com/Ozunn/pdf-smart-tool-updates/releases/download/v1.0.0/PDF_Smart_Tool_v1.0.0.exe",
-          "sha256": "2dbe7ee6ba0b77633a806fdfa71efcb8dfe647e30e2d3daa8e6cbb78534fc49f",
-          "sizeBytes": 526581297
+          "sha256": "75d2aed476b7ddf27dc0f577e4b5f52ddc2471ae784bda7f2b157a2756035b70",
+          "sizeBytes": 528649244
         }
       },
       "newsThisVersion": {
         "highlights": [
           "Prima release pubblica di PDF Smart Tool",
           "Licenza + download protetto R2",
-          "Form 2 email bloccata con assistenza",
+          "Form 2: menu professione + sync CRM senza re-invio email",
           "Tool test scenari: gate + licenza QA auto-fill (build monitoraggio)"
         ],
         "knownIssues": []
