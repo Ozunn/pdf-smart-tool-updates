@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "latestVersion": "1.0.1",
+  "latestVersion": "1.0.0",
   "minSupportedVersion": "1.0.0",
   "releasedAt": "2026-05-12T18:00:00Z",
   "profileCollectionPolicyVersion": 1,
@@ -9,8 +9,8 @@
       "binary": {
         "windowsX64": {
           "url": "https://github.com/Ozunn/pdf-smart-tool-updates/releases/download/v1.0.0/PDF_Smart_Tool_v1.0.0.exe",
-          "sha256": "60cd70c8c99648441b4390a51f3187935081152c2783a360592eb70ed3bbb2fa",
-          "sizeBytes": 526531188
+          "sha256": "76a1d0743017a938ddb7e4cee81eec1f21e7d754430464dd6aa8b133bc441319",
+          "sizeBytes": 526583021
         }
       },
       "newsThisVersion": {
