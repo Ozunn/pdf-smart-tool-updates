@@ -2,15 +2,15 @@
   "schemaVersion": 1,
   "latestVersion": "1.0.0",
   "minSupportedVersion": "1.0.0",
-  "releasedAt": "2026-05-28T13:40:00Z",
+  "releasedAt": "2026-05-28T14:00:00Z",
   "profileCollectionPolicyVersion": 1,
   "channels": {
     "stable": {
       "binary": {
         "windowsX64": {
           "url": "https://github.com/Ozunn/pdf-smart-tool-updates/releases/download/v1.0.0/PDF_Smart_Tool_v1.0.0.exe",
-          "sha256": "9b641684352acc7eb0c74aef74fa9a35d20509e3dcb498edf226dc575cdcd567",
-          "sizeBytes": 526549475
+          "sha256": "79432af347397363537a67283cfb0269ba0c9bdb9c47da77e01fdbde980c7a4e",
+          "sizeBytes": 528592950
         }
       },
       "newsThisVersion": {
@@ -18,6 +18,7 @@
           "Prima release pubblica di PDF Smart Tool",
           "Licenza + download protetto R2",
           "Professioni wellness v3 (Form 1 e Form 2)",
+          "Placeholder professione non selezionabile con stile grigio",
           "Smart page: testo centrale aggiornato e footer A cura di [nome]",
           "Tool test scenari: gate + licenza QA auto-fill (build monitoraggio)"
         ],
