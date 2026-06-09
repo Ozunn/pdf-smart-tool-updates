@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Licenza PDF Smart Tool</title>
+  <style>
+    body{font-family:system-ui,sans-serif;max-width:520px;margin:48px auto;padding:0 16px;color:#1a1a2e;line-height:1.5}
+    h1{font-size:1.25rem}
+    .muted{color:#666;font-size:.9rem}
+    a{color:#00a0ad}
+  </style>
+</head>
+<body>
+  <h1 id="title">PDF Smart Tool</h1>
+  <p id="message"></p>
+  <p class="muted"><a href="form.html">Torna al modulo riscatto</a></p>
+  <script>
+    var map = {
+      sent: ["Controlla la tua email", "Ti abbiamo inviato un link di conferma. Cliccalo entro 30 minuti per ricevere chiave licenza e download."],
+      done: ["Licenza attiva", "Controlla la tua email: troverai chiave licenza e link per scaricare PDF Smart Tool."],
+      resent: ["Email inviata", "La licenza esiste gia. Ti abbiamo reinviato chiave e link download."],
+      invalid_request: ["Dati non validi", "Controlla numero ordine e email e riprova."],
+      order_not_registered_yet: ["Ordine in elaborazione", "Attendi 5-15 minuti dopo il pagamento e riprova."],
+      order_revoked: ["Ordine non disponibile", "Ordine annullato o rimborsato. Licenza non disponibile."],
+      order_already_claimed: ["Licenza gia riscattata", "Controlla la tua email o contatta supporto."],
+      rate_limited: ["Troppi tentativi", "Riprova tra 15 minuti."],
+      invalid_or_expired_token: ["Link scaduto", "Richiedi un nuovo link dal modulo riscatto."],
+      order_not_eligible: ["Ordine non idoneo", "Contatta il venditore."],
+      listing_not_entitled: ["Prodotto non configurato", "Contatta il venditore: altereco.social@gmail.com"]
+    };
+    var params = new URLSearchParams(location.search);
+    var code = params.get("code");
+    var status = code || params.get("status") || "error";
+    var pair = map[status] || ["Operazione non riuscita", "Riprova piu tardi o scrivi a altereco.social@gmail.com"];
+    document.getElementById("title").textContent = pair[0];
+    document.getElementById("message").textContent = pair[1];
+  </script>
+</body>
+</html>
